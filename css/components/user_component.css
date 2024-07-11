@@ -1,5 +1,16 @@
 .user_component {
   justify-content: space-between;
+  transition: background-color 0.3s ease-in;
+}
+.user_component:hover .user_component_photo_sm{
+  height: 70px;
+  width: 70px;
+}
+.user_component:hover h4{
+  color: rgb(255, 80, 80);
+}
+.user_component h4{
+  transition: color 0.3s ease-in;
 }
 
 .user_component,
@@ -37,7 +48,10 @@
   border-radius: 25px;
   margin-right: 17px;
   object-fit: cover;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
 }
+
+
 .user_component_title-not_bold {
   font-weight: 400;
 }
